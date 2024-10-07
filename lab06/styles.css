@@ -1,0 +1,26 @@
+/* Set the global font for the entire website */
+body {
+    font-family: "Arial", sans-serif; /* Replace Arial with the web-safe font of your choice */
+  }
+  
+  /* Style all h1 and h2 elements with a custom color */
+  h1, h2 {
+    color: blue; /* Replace 'blue' with your chosen color from W3Schools color list */
+  }
+  
+  /* Zebra table styling: This will apply to even rows in tables */
+  .evenrow {
+    background-color: lightgray; /* Choose a contrasting background color for even rows */
+  }
+  
+  /* Adjust the font size of h1 headings */
+  h1 {
+    font-size: 2em; /* Adjust the size for h1 as needed */
+  }
+  
+  /* Adjust the font size of h2 headings */
+  h2 {
+    font-size: 1.5em; /* Make h2 slightly smaller to indicate its lower importance */
+  }
+  
+      
