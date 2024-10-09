@@ -1,0 +1,46 @@
+/* Body Styling */
+body {
+    background-color: #2A363B; /* Dark Charcoal */
+    color: #F3F3F3; /* Pale White */
+    font-family: Arial, sans-serif;
+}
+
+/* Link Styling */
+a {
+    color: #FF847C; /* Light Coral */
+    text-decoration: none;
+}
+
+/* Heading Styling */
+h1, h2, h3, h4, h5, h6 {
+    color: #E84A5F; /* Deep Red-Pink */
+}
+
+/* Site Navigation Styling */
+nav {
+    background-color: #2A363B; /* Dark Charcoal */
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #F3F3F3; /* Pale White */
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Pseudo Selector: Highlight on Hover */
+nav a:hover {
+    background-color: #FECEAB; /* Peach Yellow */
+    color: #2A363B; /* Change text color to Dark Charcoal for contrast */
+}
+
+/* Underline for active nacigation link*/
+nav a.active {
+    border-bottom: 2px solid #FECEAB; /* A Peach Yellow underline for the active link */
+}
+
+/* Navigation Visited Links */
+nav a:visited {
+    color: #FF847C; /* Light Coral for visited links */
+}
