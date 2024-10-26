@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        /* General reset and font styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main header */
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Flexbox container styling for rows */
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        /* Row styling */
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Column styling for each section in rows */
+        .column {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        }
+
+        /* Styling for links */
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        /* Map styling */
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contact</h1>
+
+    <div class="container">
+        <!-- Row 1: Address and Contact Links -->
+        <div class="row">
+            <div class="column">
+                <p><strong>Syracuse University</strong><br>
+                619 Comstock Ave,<br>
+                Syracuse, NY 13210,<br>
+                Ernie Davis Hall</p>
+            </div>
+            <div class="column">
+                <p>
+                    <a href="mailto:rchan05@syr.edu">rchan05@syr.edu</a><br>
+                    <a href="https://www.linkedin.com/in/rickykwanmingchan/">
+                        <img src="lab07/75_pixel_image_linkedin.png" alt="LinkedIn" style="vertical-align: middle; width: 20px; height: 20px;">
+                        My LinkedIn Profile
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Row 2: Google Maps Embed -->
+        <div class="row">
+            <div class="column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.090550207946!2d-76.13236382385546!3d43.039526271137845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f375337074d3%3A0x2f3ea3a8945e1ef6!2sErnie%20Davis%20Hall!5e0!3m2!1sen!2sus!4v1726344054608!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

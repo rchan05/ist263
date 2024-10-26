@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        /* Flexbox container for layout */
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        form input[type="text"], form textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        form input[type="submit"] {
+            background-color: #1a73e8;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #1557b3;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Ricky Chan's Coding Skills - IST263</h2>
+
+    <div class="container">
+        <!-- Skills Table -->
+        <table>
+            <caption>Skills Overview</caption>
+            <tr>
+                <th>Category</th>
+                <th>Skill</th>
+                <th>Proficiency Level</th>
+            </tr>
+            <tr>
+                <td>Programming</td>
+                <td>Python</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Programming</td>
+                <td>C++</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Web Development</td>
+                <td>HTML/CSS</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Version Control</td>
+                <td>Git</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Database Management</td>
+                <td>MySQL</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Cloud Computing</td>
+                <td>AWS</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Data Analysis</td>
+                <td>Excel</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Networking</td>
+                <td>Cisco Routing</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Scripting</td>
+                <td>Bash</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Cybersecurity</td>
+                <td>Firewalls</td>
+                <td>Beginner</td>
+            </tr>
+        </table>
+
+        <p>My coding proficiency levels are a work in progress. I'm enthusiastic about improving and leveling up my skills!</p>
+
+        <!-- Contact Form -->
+        <form action="https://formspree.io/YOUR_FORM_ID" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="source">How did you hear about us?</label>
+            <input type="radio" id="source" name="source" value="Social Media"> Social Media
+
+            <label>
+                <input type="checkbox" name="subscribe" value="Yes"> Subscribe to newsletter
+            </label>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
+
