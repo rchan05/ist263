@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Page - Floats and Flexbox</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* Float layout styles */
+        .float-left {
+            float: left;
+            margin-right: 15px;
+            width: 150px;
+            height: auto;
+        }
+
+        .float-container {
+            overflow: auto; /* Clear floats */
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+        }
+
+        /* Flexbox layout */
+        .flex-container {
+            display: flex;
+            gap: 15px;
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .flex-item {
+            flex: 1;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Flexbox order and ratio */
+        .flex-large {
+            flex: 2; /* Larger flex item */
+        }
+
+        /* Footer float styling */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f4f4f4;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Practice Page for Floats and Flexbox</h1>
+
+    <!-- Floating Image Section -->
+    <section class="float-container">
+        <h2>Using Floats</h2>
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" class="float-left">
+        <p>
+            This image is floated to the left, with text wrapped around it. Floating allows elements to be taken out of the normal document flow, so they appear to the left or right of surrounding content. Here, additional text flows alongside the image. We use a container with `overflow: auto;` to clear the float and prevent layout issues.
+        </p>
+        <p>
+            Adding a margin to the floated image keeps the text from sticking too closely to it, making for a more visually appealing layout. Floats are commonly used for image alignment, but Flexbox provides more control for modern layouts.
+        </p>
+    </section>
+
+    <!-- Flexbox Layout Section -->
+    <section>
+        <h2>Using Flexbox</h2>
+        <div class="flex-container">
+            <div class="flex-item flex-large">Important Content</div>
+            <div class="flex-item">Secondary Content</div>
+            <div class="flex-item">Additional Content</div>
+        </div>
+        <p>
+            The Flexbox layout enables items to flexibly adjust within their container. Here, the first box is given extra space using `flex: 2`, while the other items use `flex: 1`. This layout allows responsive adjustment and alignment without complex float configurations.
+        </p>
+    </section>
+
+    <!-- Footer with Floats -->
+    <footer>
+        <div>&copy; 2024 Practice Page</div>
+        <div>“First, solve the problem. Then, write the code.” – Dwayne Johnson</div>
+    </footer>
+</body>
+
+</html>
