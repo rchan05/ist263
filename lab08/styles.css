@@ -1,0 +1,20 @@
+body {
+    background-color: #2A363B; 
+    color: #03045E; 
+    font-family: sans-serif;
+}
+
+a {
+    color: #03045E;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #E84A5F;
+}
+
+nav {
+    background-color: #2A363B;
+    padding: 10px;
+    margin-bottom: 30px;
+}

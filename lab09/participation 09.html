@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid Practice</title>
+    <script src="https://kit.fontawesome.com/d72363c0a2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif; font-weight: 400;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* Grid container setup */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Flexible columns */
+            grid-auto-rows: 150px; /* Base row height */
+            gap: 20px; /* 20px gap between rows and columns */
+        }
+
+        /* Individual photo styles */
+        .photo-1, .photo-2, .photo-3, .photo-4, .photo-5, .photo-6 {
+            border-radius: 25px;
+            padding: 25px;
+        }
+
+        /* Span adjustments for specific photos */
+        .photo-1 {
+            grid-column: span 3; /* Spans three columns */
+            background-color: orangered;
+        }
+        
+        .photo-2 {
+            grid-row: span 3; /* Spans three rows */
+            background-color: yellow;
+        }
+        
+        .photo-3 {
+            grid-column: span 2; /* Spans two columns */
+            background-color: green;
+        }
+        
+        .photo-4, .photo-5, .photo-6 {
+            background-color: bisque;
+        }
+
+        /* Image styling */
+        .grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        button {
+            background-color: aquamarine;
+            border-radius: 25px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to IST 263 Photo Site</h1>
+        <p>Discover the hidden gems of IST 263, Hinds Hall, and beyond!</p>
+    </header>
+
+    <main>
+        <section class="photo-gallery">
+            <div class="container">
+                <h2 class="montserrat-200">My Portfolio</h2>
+                <div class="grid">
+                    <div class="photo-1">
+                        <img src="https://picsum.photos/400/400" alt="Photo 1">
+                        <div class="content">
+                            <p>Photo 1</p>
+                            <p>Photo description</p>
+                            <div>
+                                <button>See More <i class="fas fa-external-link-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo-2">
+                        <img src="https://picsum.photos/399/399" alt="Photo 2">
+                        <div class="content">
+                            <p>Photo 2</p>
+                            <p>Photo description</p>
+                            <div>
+                                <button>See More <i class="fas fa-external-link-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo-3">
+                        <img src="https://picsum.photos/401/401" alt="Photo 3">
+                        <div class="content">
+                            <p>Photo 3</p>
+                            <p>Photo description</p>
+                            <div>
+                                <button>See More <i class="fas fa-external-link-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo-4">
+                        <img src="https://picsum.photos/402/402" alt="Photo 4">
+                        <div class="content">
+                            <p>Photo 4</p>
+                            <p>Photo description</p>
+                            <div>
+                                <button>See More <i class="fas fa-external-link-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo-5">
+                        <img src="https://picsum.photos/403/403" alt="Photo 5">
+                        <div class="content">
+                            <p>Photo 5</p>
+                            <p>Photo description</p>
+                            <div>
+                                <button>See More <i class="fas fa-external-link-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo-6">
+                        <img src="https://picsum.photos/404/404" alt="Photo 6">
+                        <div class="content">
+                            <p>Photo 6</p>
+                            <p>Photo description</p>
+                            <div>
+                                <button>See More <i class="fas fa-external-link-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Centering and main container setup */
+        .main-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        /* Flexbox 2: Main layout */
+        .flexbox-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Skills section */
+        .skills-section {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Flexbox 1: Icons layout */
+        .icons-row {
+            display: flex;
+            justify-content: space-around;
+            gap: 15px;
+        }
+
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .skill-item img {
+            width: 50px;
+            height: auto;
+            margin-bottom: 5px;
+        }
+
+        /* Aside for other skills */
+        .aside {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .aside h2 {
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Spacing and padding */
+        p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Heading and Intro Text -->
+        <h2>Technical Skills</h2>
+        <p>Below are some of the technical skills I'm currently developing. Each skill is represented with an icon to illustrate my proficiency level and learning journey.</p>
+
+        <!-- Flexbox 2: Main Layout with Skills and Aside -->
+        <div class="flexbox-container">
+            
+            <!-- Flexbox 1: Skills Section with Icons -->
+            <div class="skills-section">
+                <div class="icons-row">
+                    <div class="skill-item">
+                        <img src="https://via.placeholder.com/50" alt="Python Icon">
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://via.placeholder.com/50" alt="C++ Icon">
+                        <p>C++</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://via.placeholder.com/50" alt="HTML/CSS Icon">
+                        <p>HTML/CSS</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://via.placeholder.com/50" alt="Git Icon">
+                        <p>Git</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://via.placeholder.com/50" alt="MySQL Icon">
+                        <p>MySQL</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aside Section for Other Skills -->
+            <aside class="aside">
+                <h2>Other Skills</h2>
+                <ul>
+                    <li>Cloud Computing - AWS</li>
+                    <li>Data Analysis - Excel (Advanced)</li>
+                    <li>Networking - Cisco Routing</li>
+                    <li>Scripting - Bash</li>
+                    <li>Cybersecurity - Firewalls</li>
+                </ul>
+            </aside>
+
+        </div>
+    </div>
+</body>
+
+</html>
