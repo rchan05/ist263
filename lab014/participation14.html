@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Quicksand&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        .new-amsterdam-regular {
+            font-family: "New Amsterdam", sans-serif;
+            font-weight: 400;
+        }
+        .container { width: 800px; margin: 0 auto; text-align: center; }
+        .button {
+            background-color: lightblue;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            width: 50%;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .close {
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="new-amsterdam-regular">
+    <div class="container">
+        <img src="../images/cupcakes.jpg" style="width: 500px; height: 300px;" alt="Cupcakes">
+        <h1>Desserts</h1>
+        <p>Tootsie roll icing dessert oat cake lollipop jelly apple pie muffin. Jelly jelly-o bear claw topping muffin pudding oat cake.</p>
+        <button class="button" id="openModal">Get More Information</button>
+    </div>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Candy Delight</h2>
+            <img src="https://via.placeholder.com/150" alt="Candy" style="width:150px;">
+            <p>Discover a world of sweetness with our candy collection!</p>
+            <button class="button">Buy Now</button>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("infoModal");
+        document.getElementById("openModal").onclick = () => modal.style.display = "block";
+        document.getElementById("closeModal").onclick = () => modal.style.display = "none";
+        window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+    </script>
+</body>
+</html>
