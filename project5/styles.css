@@ -1,3 +1,10 @@
+head {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+  
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
