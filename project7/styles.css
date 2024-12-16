@@ -23,7 +23,7 @@ header {
 nav {
     background: #35424a;
     padding: 10px 0;
-    margin-bottom: 20px; /* White space below navigation */
+    margin-bottom: 20px; /* White space below navigaton */
 }
 
 nav ul {
@@ -94,7 +94,7 @@ footer {
     font-size: 1.2rem;
     line-height: 1.8;
     color: #fff;
-    background: #000; /* Dark background enhances neon effect */
+    background: #000; 
     border-radius: 20px;
     border: 4px solid transparent;
     position: relative;
